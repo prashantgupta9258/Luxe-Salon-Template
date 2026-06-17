@@ -1,0 +1,6 @@
+{
+  "name": "Luxm Salon Template",
+  "description": "An elegant hair salon template with services, reviews, and a booking contact form with maps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
