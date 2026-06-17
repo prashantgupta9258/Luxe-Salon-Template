@@ -1,0 +1,38 @@
+{
+  "collections": {
+    "appointments": {
+      "security": {
+        "read": "if request.auth != null;",
+        "create": "if true;",
+        "update": "if request.auth != null;",
+        "delete": "if request.auth != null;"
+      },
+      "schema": {
+        "name": "string",
+        "phone": "string",
+        "email": "string",
+        "service": "string",
+        "date": "string",
+        "time": "string",
+        "notes": "string",
+        "createdAt": "timestamp"
+      }
+    },
+    "reviews": {
+      "security": {
+        "read": "if true;",
+        "create": "if true;",
+        "update": "if request.auth != null;",
+        "delete": "if request.auth != null;"
+      },
+      "schema": {
+        "name": "string",
+        "text": "string",
+        "rating": "number",
+        "date": "string",
+        "approved": "boolean",
+        "createdAt": "timestamp"
+      }
+    }
+  }
+}
